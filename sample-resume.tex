@@ -9,7 +9,19 @@
 \usepackage{textcomp}
 \usepackage{tgpagella}
 \pagestyle{empty}
+\usepackage{fontspec}
+\usepackage{hyperref	}
+\setmainfont[
+    Path           = /Users/Charles/Library/Fonts/,
+    Extension      = .otf,
+    Ligatures      = TeX,
+    BoldFont       = Bitter-Bold,
+    ItalicFont     = Bitter-Italic,
+    BoldItalicFont = Bitter-BoldItalic,
+    Scale		   = 0.916666667
+]{Bitter-Regular}
 \setlength{\tabcolsep}{0em}
+\linespread{0.916666667} % 11/12
 
 % indentsection style, used for sections that aren't already in lists
 % that need indentation to the level of all text in the document
@@ -35,112 +47,22 @@
 	#2 \\
 \end{tabular*}}
 
-% make "C++" look pretty when used in text by touching up the plus signs
-\newcommand{\CPP}
-{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
-
 % and the actual content starts here
 \begin{document}
 
 \begin{center}
-{\LARGE \textbf{John Q. Example}}
+{\Large \textbf{Charles B. Dawson}}
 
-151 E Wacker Drive\ \ \textbullet
-\ \ Suite\ 1001\ \ \textbullet
-\ \ Chicago, IL 60606
+Mailbox \#911 \ \ \textbullet \ \ 340 E. Foothill Blvd.\ \ \textbullet \ \ Claremont, CA 91711
 \\
-(312) 555-1212\ \ \textbullet
-\ \ test@example.com
+(202) 531-8988\ \ \textbullet
+\ \ \href{mailto:charles.dwsn@gmail.com}{charles.dwsn@gmail.com} \ \ \textbullet
+\ \ \urlstyle{\familydefault} \url{www.github.com/dawsonc}
 \end{center}
 
 \hrule
-\vspace{-0.4em}
-\subsection*{Experience}
+\vspace{-0.2em}
 
-\begin{itemize}
-	\parskip=0.1em
-
-	\item
-	\headerrow
-		{\textbf{Example Company One, LLC.}}
-		{\textbf{Chicago, IL}}
-	\\
-	\headerrow
-		{\emph{Software Developer \& Project Manager}}
-		{\emph{2004 -- 2010}}
-	\begin{itemize*}
-		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-		diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-		erat volutpat.
-		\item Duis splople autem vel eum iriure dolor in hendrerit in vulputate
-		velit esse molestie consequat, vel illum dolore eu feugiat nulla
-		facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-		praesent luptatum zzril delenit augue duis dolore te feugait nulla
-		facilisi.
-		\item Nam liber tempor cum soluta nobis eleifend option congue nihil
-		imperdiet doming id quod mazim placerat facer possim assum. Typi non
-		habent claritatem insitam; est usus legentis in iis qui facit eorum
-		claritatem.
-		\item Investigationes demonstraverunt lectores legere me lius
-		quod ii legunt saepius. Claritas est etiam processus dynamicus, qui
-		sequitur mutationem consuetudium lectorum.
-		\item Mirum est notare quam littera gothica, quam nunc putamus parum
-		claram, anteposuerit litterarum formas humanitatis per seacula quarta
-		decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum
-		clari, fiant sollemnes in futurum.
-	\end{itemize*}
-
-	\item
-	\headerrow
-		{\textbf{Arch Linux}}
-		{\textbf{www.archlinux.org}}
-	\\
-	\headerrow
-		{\emph{Software Developer \& Contributing Community Member}}
-		{\emph{2006 -- Present}}
-	\begin{itemize*}
-		\item Ut wisi enim ad minim veniam, quis nostrud exerci tation
-		ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-		\item Duis splople autem vel eum iriure dolor in hendrerit in vulputate
-		velit esse molestie consequat, vel illum dolore eu feugiat nulla
-		facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-		praesent luptatum zzril delenit augue duis dolore te feugait nulla
-		facilisi.
-		\item Nam liber tempor cum soluta nobis eleifend option congue nihil
-		imperdiet doming id quod mazim placerat facer possim assum. Typi non
-		habent claritatem insitam; est usus legentis in iis qui facit eorum
-		claritatem.
-		\item Mirum est notare quam littera gothica, quam nunc putamus parum
-		claram, anteposuerit litterarum formas humanitatis per seacula quarta
-		decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum
-		clari, fiant sollemnes in futurum.
-	\end{itemize*}
-
-	\item
-	\headerrow
-		{\textbf{Example Company Two, Inc.}}
-		{\textbf{Chicago, IL}}
-	\\
-	\headerrow
-		{\emph{Software Consultant, Summer Intern}}
-		{\emph{1999 -- 2004}}
-	\begin{itemize*}
-		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-		diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-		erat volutpat.
-		\item Ut wisi enim ad minim veniam, quis nostrud exerci tation
-		ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-		\item Nam liber tempor cum soluta nobis eleifend option congue nihil
-		imperdiet doming id quod mazim placerat facer possim assum. Typi non
-		habent claritatem insitam; est usus legentis in iis qui facit eorum
-		claritatem.
-	\end{itemize*}
-
-\end{itemize}
-
-
-\hrule
-\vspace{-0.4em}
 \subsection*{Education}
 
 \begin{itemize}
@@ -148,33 +70,116 @@
 
 	\item 
 	\headerrow
-		{\textbf{Somewhere State University}}
-		{\textbf{Somewhere, SM}}
-	\\
+		{\textbf{Harvey Mudd College}}
+		{\textbf{Claremont, CA}}
+	
 	\headerrow
-		{\emph{College of Engineering, B.S. Computer Science}}
-		{\emph{1995 -- 1999}}
+		{\emph{Bachelor of Science}}
+		{\emph{Expected, May 2019}}
+	\headerrow
+		{Relevant Coursework}{}	
 	\begin{itemize*}
-		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-		\item Mirum est notare quam littera gothica, quam nunc putamus parum
-		claram.
+		\item[] Principles of Computer Science; Data Structures \& Program Development (Anticipated, Spring 2016)
 	\end{itemize*}
+	
+	\item 
+	\headerrow
+		{\textbf{Maret High School}}
+		{\textbf{Washington, DC}}
+	
+	\headerrow
+		{Valedictorian, GPA: 3.99}
+		{\emph{June 2015}}	
+	\begin{itemize*}
+		\item Took AP courses in Computer Science, Economics, Calculus, Chemistry, and Physics
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{Honors and Awards}}{}
+	\begin{itemize*}
+		\item Harvey S. Mudd Merit Award (2015-present)
+		\item National Merit Scholar 2015
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{Study Abroad:} Summer Abroad in Taipei, Taiwan 2013}
+		{}
 
 \end{itemize}
 
-
 \hrule
-\vspace{-0.4em}
-\subsection*{Core Technical Skills}
+\vspace{-0.2em}
+\subsection*{Skills}
 
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description*}
-	\item[Languages:]
-	C, \CPP, Java, JavaScript, \LaTeX, Perl, Python, shell script, SQL
-	\item[Open Source Contributions:]
-	Project A, Project B, Project C
+	\item[\textbullet \ Programming Languages:]
+	Proficient in Python, Ruby, Arduino, and the Unix-style terminal \newline 
+\hphantom{Programming Language} Familiar with Go, JavaScript, Java, and  \normalsize\LaTeX\normalsize.
+	\item[\textbullet] Conversant in Chinese \ \ \textbullet \ \ Experience with 3D design software (Blender) and 3D printing
 \end{description*}
 \end{indentsection}
+
+\hrule
+\vspace{-0.2em}
+
+\subsection*{Relevant Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{The Rock Creek Group}}
+		{\textbf{Washington, DC}}
+	\\
+	\headerrow
+		{\emph{Software Development Intern}}
+		{\emph{May 18, 2015 -- May 29, 2015}}
+	\begin{itemize*}
+		\item Extended the Rock Creek Group's internal toolset to automatically generate monthly portfolio performance reports, reducing the employee time needed to generate a PowerPoint presentation for a client from more than one hour to less than five minutes
+		\item Developed efficient algorithms to aggregate statistics from a large dataset spanning multiple years of historical financial data using Python, Django, and the NumPy/Scipy environment
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{Solution Street, LLC.}}
+		{\textbf{Herndon, VA}}
+	\\
+	\headerrow
+		{\emph{Web Development Intern}}
+		{\emph{June 30, 2014 -- August 1, 2014}}
+	\begin{itemize*}
+		\item Extended the application architecture of Solution Street's internal time-tracking and invoicing website (using Ruby on Rails) to include representations of client- and project-specific requirements, allowing the firm to be more proactive in meeting clients' needs
+		\item Redesigned interface using Javascript, JQuery, HTML, and CSS to make information about client requirements more readily available to employees working on client projects, reducing friction and improving communication between Solution Street employees and their clients
+	\end{itemize*}
+		
+	\item
+	\headerrow
+		{\textbf{Personal Projects \& Open Source Contributions}}{}
+	\begin{itemize*}
+		\item Wrote a Python utility for tracing Bitcoin funds through the blockchain, a genetic algorithm implementation in Java, a Markov chain-based Shakespearean sonnet generator in Java, and a letter frequency decryption engine in Java
+		\item Contributed to Bok-Choy, a Python UI-level acceptance test framework, and BitHub, a Java widget that rewards GitHub commits to open source projects with Bitcoin.
+	\end{itemize*}
+\end{itemize}
+
+\hrule
+\vspace{-0.2em}
+\subsection*{Leadership Activities}
+
+\begin{itemize}
+	\item
+	\headerrow
+		{\textbf{Engineering Team Captain}}{Maret High School}
+	\headerrow
+		{Competed in the Marine Advanced Technology Education Center ROV Competition}{}
+	\begin{itemize*}
+		\item Coordinated multiple sub-teams working on various aspects of robot design
+		\item Managed the 5-person digital systems design and implementation sub-team
+	\end{itemize*}
+\end{itemize}
 
 \end{document}
